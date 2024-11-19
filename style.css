@@ -31,17 +31,21 @@ body {
     font-family: quicksand;
     font-weight: 400;
     transform: translateX(0vw);
-    transition: all 0.75s ease-in-out;
+    filter: blur(0vw);
+    transition: all 1.5s ease-in-out;
     @starting-style {
         transform: translateX(-3vw);
+        filter: blur(.2rem);
     }
 }
 
 .button {
     transform: translateX(0vw);
-    transition: all 0.75s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    filter: blur(0vw);
     @starting-style {
         transform: translateX(3vw);
+        filter: blur(.2rem);
     }
 }
 
