@@ -18,6 +18,7 @@ function generateStory() {
     name = name;
   }
 
+  // Variables
   let place = prompt("Enter a place:");
   let object = prompt("Enter an object:");
   let food = prompt("Enter a food:");
@@ -41,4 +42,18 @@ function generateStory() {
   document.getElementById("story4").innerHTML = myStory4;
   document.getElementById("story5").innerHTML = myStory5;
   document.getElementById("story6").innerHTML = myStory6;
+
+  story1.classList.add('story-text', 'display-5', 'text-white', 'border', 'border-2', 'border-white', 'd-flex', 'align-items-center', 'justify-content-center', 'text-center');
+  story2.classList.add('story-text', 'display-5', 'text-white', 'border', 'border-2', 'border-white', 'd-flex', 'align-items-center', 'justify-content-center', 'text-center');
+  story3.classList.add('story-text', 'display-5', 'text-white', 'border', 'border-2', 'border-white', 'd-flex', 'align-items-center', 'justify-content-center', 'text-center');
+  story4.classList.add('story-text', 'display-5', 'text-white', 'border', 'border-2', 'border-white', 'd-flex', 'align-items-center', 'justify-content-center', 'text-center');
+  story5.classList.add('story-text', 'display-5', 'text-white', 'border', 'border-2', 'border-white', 'd-flex', 'align-items-center', 'justify-content-center', 'text-center');
+  story6.classList.add('story-text', 'display-5', 'text-white', 'border', 'border-2', 'border-white', 'd-flex', 'align-items-center', 'justify-content-center', 'text-center');
+
+  document.getElementById('row1').classList.remove('hidden');
+  document.getElementById('row2').classList.remove('hidden');
+  document.getElementById('row3').classList.remove('hidden');
+  document.getElementById('row4').classList.remove('hidden');
+  document.getElementById('row5').classList.remove('hidden');
+  document.getElementById('row6').classList.remove('hidden');
 }

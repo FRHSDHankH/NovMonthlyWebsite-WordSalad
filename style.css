@@ -6,7 +6,24 @@ body {
     background-color: #8AAAE5;
 }
 
-.row {
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #8AAAE5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 2vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(200, 200, 200);
+  }
+
+.scrollsnap {
     scroll-snap-align: start;
 }
 
@@ -17,6 +34,14 @@ body {
     transition: all 0.75s ease-in-out;
     @starting-style {
         transform: translateX(-3vw);
+    }
+}
+
+.button {
+    transform: translateX(0vw);
+    transition: all 0.75s ease-in-out;
+    @starting-style {
+        transform: translateX(3vw);
     }
 }
 
@@ -33,4 +58,12 @@ body {
 
 .full-height {
     height: 100vh;
+}
+
+.padding {
+    padding: 20vh 5vw 20vh;
+}
+
+.hidden {
+    display: none;
 }
