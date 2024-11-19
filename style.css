@@ -1,0 +1,36 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: #8AAAE5;
+}
+
+.row {
+    scroll-snap-align: start;
+}
+
+.title {
+    font-family: quicksand;
+    font-weight: 400;
+    transform: translateX(0vw);
+    transition: all 0.75s ease-in-out;
+    @starting-style {
+        transform: translateX(-3vw);
+    }
+}
+
+.font {
+    font-family: roboto-slab, serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.story-text {
+    font-family: quicksand;
+    font-weight: 700;
+}
+
+.full-height {
+    height: 100vh;
+}
