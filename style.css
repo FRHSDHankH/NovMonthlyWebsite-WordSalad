@@ -33,7 +33,7 @@ body {
     font-weight: 400;
     transform: translateX(0vw);
     filter: blur(0vw);
-    transition: all 1.5s ease-in-out;
+    transition: all .5s ease-in-out;
     @starting-style {
         transform: translateX(-3vw);
         filter: blur(.2rem);
@@ -42,12 +42,20 @@ body {
 
 .button {
     transform: translateX(0vw);
-    transition: all 1.5s ease-in-out;
+    transition: all .5s ease-in-out;
     filter: blur(0vw);
     @starting-style {
         transform: translateX(3vw);
         filter: blur(.2rem);
     }
+}
+
+.button:hover {
+    scale: 1.1;
+}
+
+.button:active {
+    scale: 1;
 }
 
 .font {
