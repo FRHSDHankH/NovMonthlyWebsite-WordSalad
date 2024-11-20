@@ -56,4 +56,5 @@ function generateStory() {
   document.getElementById('row4').classList.remove('hidden');
   document.getElementById('row5').classList.remove('hidden');
   document.getElementById('row6').classList.remove('hidden');
+  document.getElementById('footer').classList.remove('hidden');
 }

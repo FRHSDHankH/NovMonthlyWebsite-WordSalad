@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background-color: #8AAAE5;
+    background-image: linear-gradient(rgb(137,207,240), rgb(65,105,225));
+    background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
