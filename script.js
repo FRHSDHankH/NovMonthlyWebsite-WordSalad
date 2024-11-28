@@ -57,4 +57,6 @@ function generateStory() {
   document.getElementById('row5').classList.remove('hidden');
   document.getElementById('row6').classList.remove('hidden');
   document.getElementById('footer').classList.remove('hidden');
+
+  document.getElementById('scroll').innerText = 'Scroll for the story!';
 }

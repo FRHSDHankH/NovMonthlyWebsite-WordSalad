@@ -1,82 +1,101 @@
+/* Enables smooth vertical scroll snapping */
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
+/* Sets a fixed gradient background for the body */
 body {
-    background-image: linear-gradient(rgb(137,207,240), rgb(65,105,225));
+    background-image: linear-gradient(rgb(137, 207, 240), rgb(65, 105, 225));
     background-attachment: fixed;
 }
 
+/* Custom scrollbar styles */
+/* Adjusts scrollbar width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-image: linear-gradient(rgb(137,207,240), rgb(65,105,225));
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Customizes the scrollbar track with a gradient */
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(137, 207, 240), rgb(65, 105, 225));
+}
+
+/* Customizes the scrollbar thumb with a white color and rounded edges */
+::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 2vw;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(200, 200, 200);
-  }
+}
 
+/* Changes the scrollbar thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(200, 200, 200);
+}
+
+/* Applies scroll snapping alignment to elements with this class */
 .scrollsnap {
     scroll-snap-align: start;
 }
 
+/* Styles for the title text */
 .title {
-    font-family: quicksand;
-    font-weight: 400;
-    transform: translateX(0vw);
-    filter: blur(0vw);
-    transition: all .5s ease-in-out;
+    font-family: quicksand; /* Sets the font family */
+    font-weight: 400; /* Normal font weight */
+    transform: translateX(0vw); /* Initially no horizontal translation */
+    filter: blur(0vw); /* No blur by default */
+    transition: all 0.5s ease-in-out; /* Smooth transition for transformations */
+    /* Starting styles for animation effects */
     @starting-style {
-        transform: translateX(-3vw);
-        filter: blur(.2rem);
+        transform: translateX(-3vw); /* Moves text slightly to the left */
+        filter: blur(0.2rem); /* Applies a subtle blur */
     }
 }
 
+/* Button appearance and animations */
 .button {
-    transform: translateX(0vw);
-    transition: all .5s ease-in-out;
-    filter: blur(0vw);
+    transform: translateX(0vw); /* No horizontal movement initially */
+    transition: all 0.5s ease-in-out; /* Smooth transition for transformations */
+    filter: blur(0vw); /* No blur by default */
+    /* Starting styles for animation effects */
     @starting-style {
-        transform: translateX(3vw);
-        filter: blur(.2rem);
+        transform: translateX(3vw); /* Moves button slightly to the right */
+        filter: blur(0.2rem); /* Applies a subtle blur */
     }
 }
 
+/* Button hover effect: enlarges slightly */
 .button:hover {
     scale: 1.1;
 }
 
+/* Button active effect: resets to original size */
 .button:active {
     scale: 1;
 }
 
+/* Font style for text in the button */
 .font {
-    font-family: roboto-slab, serif;
-    font-weight: 300;
-    font-style: normal;
+    font-family: roboto-slab, serif; /* Uses Roboto Slab font */
+    font-weight: 300; /* Light font weight */
+    font-style: normal; /* Normal font style */
 }
 
+/* Style for story text */
 .story-text {
-    font-family: quicksand;
-    font-weight: 700;
+    font-family: quicksand; /* Sets Quicksand font */
+    font-weight: 700; /* Bold font weight */
 }
 
+/* Utility class for full-height sections */
 .full-height {
-    height: 100vh;
+    height: 100vh; /* Sets height to the full viewport */
 }
 
+/* Adds padding to sections for spacing */
 .padding {
-    padding: 20vh 5vw 20vh;
+    padding: 20vh 5vw 20vh; /* Vertical and horizontal padding */
 }
 
+/* Hides elements by default */
 .hidden {
     display: none;
 }
